@@ -23,18 +23,15 @@
  
 
 <script type="text/babel">
-//create our first class component
-// class Shapes extends React.Component
-
-
-// class Shapes extends React.Component {
-//     render(){
-//         return(
-//             <h1>Circle,Square,Rectangle</h1>
-//         )
-//     }
-// }
-
+ var Shapes=function (){
+    return(
+        <div>   
+            <Circle/>
+            <Rectangle/>
+            <Square/>
+            </div>
+        )
+ }
 
 
 class Circle extends React.Component{
@@ -76,24 +73,10 @@ class Rectangle extends React.Component{
     }
 }
 ReactDOM.render(
-    <div>
-        <Circle/>
-        <Rectangle/>
-        <Square/>
-    </div>,
+   <Shapes/>,
     document.getElementById("app")
 );
-    //Challenge
-    //create class components for circle square and rectangle
-    //render to the dom within a parent div tag
-
-    // ReactDOM.render(
-    // //react what
-    // <Square/>,
-    // document.getElementById("app")
-    // );
-
-
+  
 
 
 
